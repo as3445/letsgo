@@ -24,7 +24,7 @@
     <![endif]-->
   </head>
   <body>
-  
+
 
   <div class="row">
     <div class="col-xs-3">
@@ -32,15 +32,15 @@
     </div>
 
     <div class="col-xs-3">
-      <a class="navbar-brand" href="messages.php"><span class="fui-mail"></span>
+      <a class="navbar-brand" href="messages.php"><span class="fui-mail"></span></a>
     </div>
 
     <div class="col-xs-3">
-      <a class="navbar-brand" href="messages.php"><span class="fui-heart"></span>
+      <a class="navbar-brand" href="messages.php"><span class="fui-heart"></span></a>
     </div>
 
     <div class="col-xs-2">
-      <a class="navbar-brand" href="messages.php"><span class="fui-gear"></span>
+      <a class="navbar-brand" href="messages.php"><span class="fui-gear"></span></a>
     </div>
   </div>
 
