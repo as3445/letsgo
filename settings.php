@@ -1,35 +1,40 @@
 <?php include 'header.php' ?>
-     
 
- <div class="container">
-  <form class="form-horizontal" role="form">
-    <fieldset>
-      <legend>Profile Information</legend>
-      <div class="form-group">
-        <label class="col-sm-3 control-label" for="card-holder-name">First Name</label>
-        <div class="col-sm-9">
-          <input type="text" class="form-control" name="card-holder-name" id="card-holder-name" placeholder="First Name">
+
+ <div class="container-fluid">
+   <div class="row">
+     <div class="col-xs-12">
+      <form class="form-horizontal" role="form">
+        <fieldset>
+          <legend>Profile Information</legend>
+          <div class="form-group">
+            <label class="col-sm-3 control-label" for="card-holder-name">First Name</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" name="card-holder-name" id="card-holder-name" placeholder="First Name">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-3 control-label" for="card-number">Last Name</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" name="card-number" id="card-number" placeholder="Last Name">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-3 control-label" for="card-number">Email Address</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" name="card-number" id="card-number" placeholder="Email Address">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-3 control-label" for="card-number">Passowrd</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" name="card-number" id="card-number" placeholder="Password">
+            </div>
+          </div>
         </div>
       </div>
-      <div class="form-group">
-        <label class="col-sm-3 control-label" for="card-number">Last Name</label>
-        <div class="col-sm-9">
-          <input type="text" class="form-control" name="card-number" id="card-number" placeholder="Last Name">
-        </div>
-      </div>
-      <div class="form-group">
-        <label class="col-sm-3 control-label" for="card-number">Email Address</label>
-        <div class="col-sm-9">
-          <input type="text" class="form-control" name="card-number" id="card-number" placeholder="Email Address">
-        </div>
-      </div>
-      <div class="form-group">
-        <label class="col-sm-3 control-label" for="card-number">Passowrd</label>
-        <div class="col-sm-9">
-          <input type="text" class="form-control" name="card-number" id="card-number" placeholder="Password">
-        </div>
-      </div>
- <div class="container">
+    </div>
+ <div class="container-fluid">
   <form class="form-horizontal" role="form">
     <fieldset>
       <legend>Payment</legend>
@@ -49,7 +54,7 @@
         <label class="col-sm-3 control-label" for="expiry-month">Expiration Date</label>
         <div class="col-sm-9">
           <div class="row">
-            <div class="col-xs-3">
+            <div class="col-xs-6">
               <select class="form-control col-sm-2" name="expiry-month" id="expiry-month">
                 <option>Month</option>
                 <option value="01">Jan (01)</option>
@@ -66,7 +71,7 @@
                 <option value="12">Dec (12)</option>
               </select>
             </div>
-            <div class="col-xs-3">
+            <div class="col-xs-6">
               <select class="form-control" name="expiry-year">
                 <option value="13">2013</option>
                 <option value="14">2014</option>
