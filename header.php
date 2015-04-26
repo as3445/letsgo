@@ -37,10 +37,10 @@
     </div>
 
     <div class="col-xs-3">
-      <a class="navbar-brand" href="messages.php"><span class="fui-heart"></span></a>
+      <a class="navbar-brand" href="match.php"><span class="fui-heart"></span></a>
     </div>
 
     <div class="col-xs-3">
-      <a class="navbar-brand" href="messages.php"><span class="fui-gear"></span></a>
+      <a class="navbar-brand" href="settings.php"><span class="fui-gear"></span></a>
     </div>
   </div>
