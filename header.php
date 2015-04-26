@@ -26,21 +26,22 @@
   </head>
   <body>
 
-
-  <div class="row">
+<div class="container-fluid">
+  <div class="row" style="background-color:#E74C3C;">
     <div class="col-xs-3">
-      <a class="navbar-brand" href="match.php" style="padding: 14px 0px">Let's&nbsp;Go!</a>
+      <a class="navbar-brand" href="match.php" style="padding: 14px 0px; color:#F0C419;">Let's&nbsp;Go!</a>
     </div>
 
     <div class="col-xs-3">
-      <a class="navbar-brand" href="messages.php"><span class="fui-mail"></span></a>
+      <a class="navbar-brand" href="messages.php"><span class="fui-mail" style="color:yellow"></span></a>
     </div>
 
     <div class="col-xs-3">
-      <a class="navbar-brand" href="match.php"><span class="fui-heart"></span></a>
+      <a class="navbar-brand" href="match.php"><span class="fui-heart" style="color:yellow"></span></a>
     </div>
 
     <div class="col-xs-3">
-      <a class="navbar-brand" href="settings.php"><span class="fui-gear"></span></a>
+      <a class="navbar-brand" href="settings.php"><span class="fui-gear" style="color:yellow"></span></a>
     </div>
   </div>
+</div>
