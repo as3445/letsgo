@@ -26,15 +26,16 @@
             </div>
           </div>
           <div class="form-group">
-            <label class="btn-social1 control-label" for="card-number">Passowrd</label>
+            <label class="col-sm-3 control-label" for="card-number">Password</label>
             <div class="col-sm-9">
               <input type="text" class="form-control" name="card-number" id="card-number" placeholder="Password">
             </div>
           </div>
-        </div>
       </div>
-    </div>
+  </div>
  <div class="container-fluid">
+  <div class="row">
+     <div class="col-xs-12">
   <form class="form-horizontal" role="form">
     <fieldset>
       <legend>Payment</legend>
@@ -44,12 +45,14 @@
           <input type="text" class="form-control" name="card-holder-name" id="card-holder-name" placeholder="Card Holder's Name">
         </div>
       </div>
+      <br>
       <div class="form-group">
         <label class="col-sm-3 control-label" for="card-number">Card Number</label>
         <div class="col-sm-9">
           <input type="text" class="form-control" name="card-number" id="card-number" placeholder="Debit/Credit Card Number">
         </div>
       </div>
+      <br>
       <div class="form-group">
         <label class="col-sm-3 control-label" for="expiry-month">Expiration Date</label>
         <div class="col-sm-9">
@@ -89,12 +92,14 @@
           </div>
         </div>
       </div>
+      <br>
       <div class="form-group">
         <label class="col-sm-3 control-label" for="cvv">Card CVV</label>
         <div class="col-sm-3">
           <input type="text" class="form-control" name="cvv" id="cvv" placeholder="Security Code">
         </div>
       </div>
+      <br>
       <div class="form-group">
         <div class="col-sm-offset-3 col-sm-9">
           <button type="button" class="btn btn-success">Pay Now</button>
@@ -103,5 +108,6 @@
     </fieldset>
   </form>
 </div>
+
 
 <?php include 'footer.php' ?>

@@ -19,7 +19,13 @@
       </div>
     </div>
   </div>
+<div class="">
+      <a class="btn btn-block btn-lg btn-info"  style="background-color:#1abc9c;">
+        <i class="facebook"></i> Sign in
+      </a>
 </div>
+</div>
+
 
 <?php include 'footer.php' ?>
 
