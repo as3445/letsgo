@@ -6,11 +6,13 @@
 
       <!-- Sidebar -->
       <div id="sidebar-wrapper">
-        <div class="container load">
-             <h3>Animated button</h3>
-        	<button class="btn btn-lg btn-warning"><span class="glyphicon glyphicon-refresh glyphicon-refresh-animate"></span> Loading...</button>
+        <div class="container-fluid load">
+          <div class="row" style="text-align: center; margin: 10px 0;">
+          	<button class="btn btn-lg btn-alert"><i class="fa fa-refresh fa-spin"></i>  Loading...</button>
+          </div>
         </div>
-        <select id="planner">
+
+        <select id="planner" class="form-control" style="display: none;">
 
         </select>
       </div>
@@ -44,13 +46,19 @@
   $(function() {
     $.get("http://localhost/letsgo/generateRoute.php?action=getFlights", function( res ){
       var trips = JSON.parse(res);
-      console.log(res);
+
+      $("#planner").css("display", "block");
+      // console.log(trips);
       for (var r in trips){
-        $("#planner").append("<option>" + res.departure_date + "</option>")
+        console.log(trips[r]);
+        $("#planner").append("<option>" + trips[r].departure_date + "</option>");
       }
-      $("#planner").html("");
+
+      $(".load").html("Available Dates");
     });
   });
+
+  
   </script>
 
 <?php  include('footer.php') ?>

@@ -38,7 +38,7 @@ background: white url("images/ui-anim_basic_16x16.gif") right center no-repeat;
     height: 100%;
     margin-left: -250px;
     overflow-y: auto;
-    background: #000;
+    background: #bdc3c7;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
