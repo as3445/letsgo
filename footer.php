@@ -18,6 +18,7 @@
 </footer> -->
 
 <script src="dist/js/vendor/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 <script src="dist/js/vendor/video.js"></script>
 <script src="dist/js/flat-ui.min.js"></script>
 <script src="docs/assets/js/application.js"></script>
@@ -40,7 +41,7 @@ $.ajax({
 url: "http://api.sandbox.amadeus.com/v1.2/airports/autocomplete",
 dataType: "json",
 data: {
-apikey: "INSERT_APIKEY_HERE",
+apikey: "DXcZXuixye9wgHzKG3Kygsw4Zhulwl3e",
 term: request.term
 },
 success: function( data ) {
