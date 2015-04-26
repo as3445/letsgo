@@ -24,6 +24,7 @@
         </div>
       </div>
     </div>
+    <br>
     <div class="form-group">
       <label class="col-sm-3 control-label" for="card-number">I want to visit...</label>
       <div class="col-sm-9">
@@ -32,6 +33,7 @@
         </div>
       </div>
     </div>
+    <br>
     <div class="form-group">
       <label class="col-sm-3 control-label" for="card-number">I want to spend...</label>
       <div class="col-sm-9">
