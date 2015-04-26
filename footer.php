@@ -31,38 +31,51 @@
 
 <script>
 $(function() {
-function log( message ) {
-$( "<div>" ).text( message ).prependTo( "#log" );
-$( "#log" ).scrollTop( 0 );
-}
-$( "#city" ).autocomplete({
-source: function( request, response ) {
-$.ajax({
-url: "http://api.sandbox.amadeus.com/v1.2/airports/autocomplete",
-dataType: "json",
-data: {
-apikey: "DXcZXuixye9wgHzKG3Kygsw4Zhulwl3e",
-term: request.term
-},
-success: function( data ) {
-response( data );
-}
+  function log( message ) {
+    $( "<div>" ).text( message ).prependTo( "#log" );
+    $( "#log" ).scrollTop( 0 );
+    }
+    $( "#city" ).autocomplete({
+    source: function( request, response ) {
+    $.ajax({
+    url: "http://api.sandbox.amadeus.com/v1.2/airports/autocomplete",
+    dataType: "json",
+    data: {
+    apikey: "DXcZXuixye9wgHzKG3Kygsw4Zhulwl3e",
+    term: request.term
+    },
+    success: function( data ) {
+    response( data );
+    }
+    });
+    },
+    minLength: 3,
+    select: function( event, ui ) {
+    log( ui.item ?
+    "Selected: " + ui.item.label :
+    "Nothing selected, input was " + this.value);
+    },
+    open: function() {
+    $( this ).removeClass( "ui-corner-all" ).addClass( "ui-corner-top" );
+    },
+    close: function() {
+    $( this ).removeClass( "ui-corner-top" ).addClass( "ui-corner-all" );
+    }
+  });
+
+  $('#trig').on('click', function () {
+    console.log("hel");
+      $('#colMainp').toggleClass('span12p span9');
+      $('#colPushp').toggleClass('span0p span3');
+  });
+
+  $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
 });
-},
-minLength: 3,
-select: function( event, ui ) {
-log( ui.item ?
-"Selected: " + ui.item.label :
-"Nothing selected, input was " + this.value);
-},
-open: function() {
-$( this ).removeClass( "ui-corner-all" ).addClass( "ui-corner-top" );
-},
-close: function() {
-$( this ).removeClass( "ui-corner-top" ).addClass( "ui-corner-all" );
-}
-});
-});
+
+
 </script>
 
 
