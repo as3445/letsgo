@@ -2,7 +2,7 @@
 
 <div class="container">
   <div class="row">
-    <div style="text-align: center"><img src="./img/girl1.jpg" width="300" />
+    <div style="text-align: center"><img src="./img/girl3.jpg" width="300" />
     </div>
   </div>
 </div>

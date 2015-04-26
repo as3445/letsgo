@@ -8,25 +8,25 @@
       <div class="form-group">
         <label class="col-sm-3 control-label" for="card-holder-name">First Name</label>
         <div class="col-sm-9">
-          <input type="text" class="form-control" name="card-holder-name" id="card-holder-name" placeholder="Card Holder's Name">
+          <input type="text" class="form-control" name="card-holder-name" id="card-holder-name" placeholder="First Name">
         </div>
       </div>
       <div class="form-group">
         <label class="col-sm-3 control-label" for="card-number">Last Name</label>
         <div class="col-sm-9">
-          <input type="text" class="form-control" name="card-number" id="card-number" placeholder="Debit/Credit Card Number">
+          <input type="text" class="form-control" name="card-number" id="card-number" placeholder="Last Name">
         </div>
       </div>
       <div class="form-group">
         <label class="col-sm-3 control-label" for="card-number">Email Address</label>
         <div class="col-sm-9">
-          <input type="text" class="form-control" name="card-number" id="card-number" placeholder="Debit/Credit Card Number">
+          <input type="text" class="form-control" name="card-number" id="card-number" placeholder="Email Address">
         </div>
       </div>
       <div class="form-group">
         <label class="col-sm-3 control-label" for="card-number">Passowrd</label>
         <div class="col-sm-9">
-          <input type="text" class="form-control" name="card-number" id="card-number" placeholder="Debit/Credit Card Number">
+          <input type="text" class="form-control" name="card-number" id="card-number" placeholder="Password">
         </div>
       </div>
  <div class="container">
