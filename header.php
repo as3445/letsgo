@@ -44,6 +44,3 @@
       <a class="navbar-brand" href="messages.php"><span class="fui-gear"></span></a>
     </div>
   </div>
-
-
-<?php include('footer.php'); ?>
