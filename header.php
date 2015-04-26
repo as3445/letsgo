@@ -14,6 +14,7 @@
     <link href="dist/css/flat-ui.css" rel="stylesheet">
     <link href="bower_components/fontawesome/css/font-awesome.css" rel="stylesheet">
     <link href="docs/assets/css/demo.css" rel="stylesheet">
+    <link href="docs/assets/css/letsgo.css" rel="stylesheet">
 
     <link rel="shortcut icon" href="img/favicon.ico">
 
@@ -28,7 +29,7 @@
 
   <div class="row">
     <div class="col-xs-3">
-      <a class="navbar-brand" href="match.php">Let's Go!</a>
+      <a class="navbar-brand" href="match.php" style="padding: 14px 0px">Let's&nbsp;Go!</a>
     </div>
 
     <div class="col-xs-3">
@@ -39,8 +40,7 @@
       <a class="navbar-brand" href="messages.php"><span class="fui-heart"></span></a>
     </div>
 
-    <div class="col-xs-2">
+    <div class="col-xs-3">
       <a class="navbar-brand" href="messages.php"><span class="fui-gear"></span></a>
     </div>
   </div>
-
