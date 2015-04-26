@@ -29,28 +29,38 @@
 
 
 <script>
-var $input = $('.typeahead');
-$input.change(function() {
-  console.log("test");
-  $.get('http://api.sandbox.amadeus.com/v1.2/airports/autocomplete?apikey=DXcZXuixye9wgHzKG3Kygsw4Zhulwl3e&term='+value, function(data){
-    var list = [];
-    for (d in data){
-      list.push('{name: "' + data[d].value + '"}');
-    }
-    $("#locations").typeahead({ source:data });
-},'json');
-    var current = $input.typeahead("getActive");
-    if (current) {
-        // Some item from your model is active!
-        if (current.name == $input.val()) {
-            // This means the exact match is found. Use toLowerCase() if you want case insensitive match.
-        } else {
-            // This means it is only a partial match, you can either add a new item
-            // or take the active if you don't want new items
-        }
-    } else {
-        // Nothing is active so it is a new value (or maybe empty value)
-    }
+$(function() {
+function log( message ) {
+$( "<div>" ).text( message ).prependTo( "#log" );
+$( "#log" ).scrollTop( 0 );
+}
+$( "#city" ).autocomplete({
+source: function( request, response ) {
+$.ajax({
+url: "http://api.sandbox.amadeus.com/v1.2/airports/autocomplete",
+dataType: "json",
+data: {
+apikey: "INSERT_APIKEY_HERE",
+term: request.term
+},
+success: function( data ) {
+response( data );
+}
+});
+},
+minLength: 3,
+select: function( event, ui ) {
+log( ui.item ?
+"Selected: " + ui.item.label :
+"Nothing selected, input was " + this.value);
+},
+open: function() {
+$( this ).removeClass( "ui-corner-all" ).addClass( "ui-corner-top" );
+},
+close: function() {
+$( this ).removeClass( "ui-corner-top" ).addClass( "ui-corner-all" );
+}
+});
 });
 </script>
 

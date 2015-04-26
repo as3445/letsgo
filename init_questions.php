@@ -13,6 +13,6 @@
   </select>
 
   <p>I want to visit...</p>
-  <input autofocus id="locations" type="text" data-provide="typeahead" name="locations" autocomplete="off" spellcheck="off">
+  <input autofocus id="locations" type="text" data-provide="typeahead" name="locations" autocomplete="off">
 
 <?php  include('footer.php') ?>
