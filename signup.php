@@ -1,7 +1,7 @@
 <?php include 'header.php' ?>
 
      
-<div class="container">
+<div class="container-fluid">
   <h3 class="demo-panel-title">Sign Up</h3>
   <div class="row">
     <div class="col-xs-12 center">

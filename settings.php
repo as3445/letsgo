@@ -26,7 +26,7 @@
             </div>
           </div>
           <div class="form-group">
-            <label class="col-sm-3 control-label" for="card-number">Passowrd</label>
+            <label class="btn-social1 control-label" for="card-number">Passowrd</label>
             <div class="col-sm-9">
               <input type="text" class="form-control" name="card-number" id="card-number" placeholder="Password">
             </div>

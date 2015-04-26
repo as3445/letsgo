@@ -1,7 +1,7 @@
 <?php include 'header.php' ?>
 
      
-<div class="container">
+<div class="container-fluid">
   <h3 class="demo-panel-title">Sign In</h3>
   <div class="row">
     <div class="col-xs-12 center">
@@ -10,6 +10,11 @@
       </div>
       <div class="form-group">
         <input type="text" value="" placeholder="Passowrd" class="form-control" />
+      </div>
+      <div class="">
+      <a class="btn btn-block btn-lg btn-info1" onclick="_gaq.push(['_trackEvent', 'btn-social', 'click', 'btn-facebook']);">
+        <i class="facebook"></i> Sign in
+      </a>
       </div>
       <div class="">
       <a class="btn btn-block btn-lg btn-info" onclick="_gaq.push(['_trackEvent', 'btn-social', 'click', 'btn-facebook']);">
